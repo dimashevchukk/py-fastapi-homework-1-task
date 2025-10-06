@@ -132,41 +132,6 @@ all = ["email-validator (>=2.0.0)", "fastapi-cli[standard] (>=0.0.5)", "httpx (>
 standard = ["email-validator (>=2.0.0)", "fastapi-cli[standard] (>=0.0.5)", "httpx (>=0.23.0)", "jinja2 (>=2.11.2)", "python-multipart (>=0.0.7)", "uvicorn[standard] (>=0.12.0)"]
 
 [[package]]
-name = "fastapi-pagination"
-version = "0.14.2"
-description = "FastAPI pagination"
-optional = false
-python-versions = "<4.0,>=3.9"
-groups = ["main"]
-files = [
-    {file = "fastapi_pagination-0.14.2-py3-none-any.whl", hash = "sha256:3772bf5311b13190de059e67505dfce85f13498e81f2bcc6f8df3485067dec0c"},
-    {file = "fastapi_pagination-0.14.2.tar.gz", hash = "sha256:ffea771a2c5f2aa38f76a915206ea08d3e26e5344a8f2c6a884f519498322d9f"},
-]
-
-[package.dependencies]
-fastapi = ">=0.93.0"
-pydantic = ">=1.9.1"
-typing-extensions = ">=4.8.0,<5"
-
-[package.extras]
-asyncpg = ["asyncpg (>=0.24.0)", "sqlalchemy (>=1.3.20)"]
-beanie = ["beanie (>=2.0.0)"]
-bunnet = ["bunnet (>=1.1.0,<2)"]
-databases = ["databases (>=0.6.0)"]
-django = ["databases (>=0.6.0)", "django (<6.0.0)"]
-elasticsearch = ["elasticsearch-dsl (>=8.13.0,<9)"]
-firestore = ["google-cloud-firestore (>=2.19.0,<3)"]
-mongoengine = ["mongoengine (>=0.23.1,<0.30.0)"]
-motor = ["motor (>=3.6.0,<4.0.0)"]
-odmantic = ["odmantic (>=1.0.2,<2)"]
-orm = ["databases (>=0.6.0)", "orm (>=0.3.1)"]
-piccolo = ["piccolo (>=0.89,<1.25)"]
-scylla-driver = ["scylla-driver (>=3.25.6,<4)"]
-sqlalchemy = ["sqlakeyset (>=2.0.1680321678,<3)", "sqlalchemy (>=1.3.20)"]
-sqlmodel = ["sqlakeyset (>=2.0.1680321678,<3)", "sqlmodel (>=0.0.22)"]
-tortoise = ["tortoise-orm (>=0.22.0)"]
-
-[[package]]
 name = "flake8"
 version = "7.1.1"
 description = "the modular source code checker: pep8 pyflakes and co"
@@ -1081,4 +1046,4 @@ standard = ["colorama (>=0.4) ; sys_platform == \"win32\"", "httptools (>=0.6.3)
 [metadata]
 lock-version = "2.1"
 python-versions = "^3.10"
-content-hash = "0fd468c70c34d5cd6c49317937f265c26e4c40c35fae30f3287e55e101b0abb1"
+content-hash = "234a10ef7bf2ee00c16a71af0c6a5418fe58bd8a129ebeb35bbd8611e3140438"
