@@ -19,7 +19,7 @@ async def get_movies(
         page: int = Query(1, ge=1, description="Page number"),
         per_page: int = Query(10, ge=1, le=20, description="Number of items per page"),
 ) -> MovieListResponseSchema:
-    total_items = await db.scalar(select(func.count()).select_from(MovieModel))
+    total_items = int(await db.scalar(select(func.count()).select_from(MovieModel)))
     if total_items == 0:
         raise HTTPException(
             status_code=status.HTTP_404_NOT_FOUND,
