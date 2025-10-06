@@ -1,9 +1,7 @@
 import math
-
 from fastapi import APIRouter, Depends, HTTPException, status, Query
 from sqlalchemy import select, func
 from sqlalchemy.ext.asyncio import AsyncSession
-
 from database import get_db, MovieModel
 from schemas.movies import MovieDetailResponseSchema, MovieListResponseSchema
 
