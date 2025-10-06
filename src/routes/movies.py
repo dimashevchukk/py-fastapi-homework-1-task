@@ -1,7 +1,6 @@
 import math
 
-from fastapi import APIRouter, Depends, HTTPException, status, Request, Query
-from fastapi_pagination import Page, paginate
+from fastapi import APIRouter, Depends, HTTPException, status, Query
 from sqlalchemy import select, func
 from sqlalchemy.ext.asyncio import AsyncSession
 
